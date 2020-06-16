@@ -1,0 +1,202 @@
+/* header part */
+.hc_header{
+    width:100%;
+    height:78px;
+    background:#fff;
+    border-bottom: 1px solid #9d9895;
+    /* keep the header still in the top of page */
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+header{
+    width: 1251px;
+    height: 78px;
+    /* this background color help to locate position and check if float */
+    /* background: pink; */
+    margin: 0 auto;
+    overflow: hidden;
+    /* avoid child element affect this parent element */
+}
+header >a img{
+    /* width: 100px;
+    height: 78px; */
+    margin-top: 5px;
+}
+/* only select the first a tag */
+header >a{
+    float: left;
+}
+header .city{
+    /* occupy the position of image logo */
+    float: left;
+    margin-top: 29px;
+    font-size: 12px;
+}
+header .city >img{
+    width: 17px;
+    height: 17px;
+    margin-left: 31px;
+    margin-right: 7px;
+}
+header .city >a{
+    padding: 9px;
+    background: #cccccc;
+    color:white;
+    margin-left: 13px;
+}
+header .nav{
+    float: left;
+    height: 78px;
+    line-height: 78px;
+    /* vertical centered */
+
+    margin-left: 66px;
+}
+header .nav a{
+    color:#220e03;
+    margin-right: 29px;
+}
+header .nav a:last-child{
+    margin-right: 0;
+}
+header .nav a:first-child{
+    margin-right: 36px;
+}
+header .contact img{
+    height: 23px;
+    width: 23px;
+    /* delete gap between them */
+    float: left;
+    margin-right: 23px;
+}
+header .contact{
+    float: right;
+    margin-top: 29px;
+}
+header .contact a{
+    padding: 8px 12px 8px 11px;
+    border: 1px solid #989898;
+    color:#03000e;
+}
+
+/* for banner part */
+.banner{
+    height: 750px;
+    /* background: red; */
+    margin-top: 78px;
+}
+.banner a img{
+    height: 100%;
+    /* if I put height:auto it become responsive */
+    width: 100%;
+}
+
+/* *******  next section ******** */
+.cake_type{
+    height: 477px;
+    width: 100%;
+    /* background: red; */
+}
+
+.cake_type div{
+    width:33.3%;
+    height: 477px;
+    float: left;
+    text-align: center;
+    /* if child element have margin-top, then add overflow-hidden*/
+    overflow: hidden;
+}
+.cake_type div:first-child{
+    background:#eee2c8;
+}
+.cake_type div:nth-child(2){
+    background:#ddc69d;
+}
+.cake_type div:last-child{
+    background: #eee2c8;
+}
+
+.cake_type div img{
+    width: 290px;
+    height: 191px; 
+    margin-top: 77px;
+}
+/* .cake_type div a{
+    display: block;
+    font-size: 14px;
+} */
+/* only make first a becomes block
+once it becomes block, it occupy all the width
+and the underline of second a will be too long
+so 2nd a still display in line */
+.cake_type div a:first-child{
+    display: block;
+    margin-bottom: 60px;
+}
+.cake_type div a:nth-of-type(2){
+    font-size: 14px;
+    border-bottom:1px solid #1d181c ;
+    padding-bottom: 12px;
+    display: inline-block;
+    /* if no inline block, underline will cover p below, inline block make them together */
+    font-weight: bold;
+}
+.cake_type div p{
+    margin: 25px;
+}
+
+/* footer */
+.hc_footer{
+    height: 125px;
+    background: #3e2d32;
+}
+
+footer{
+    width: 1251px;
+    height: 125px;
+    /* background: red; */
+    margin: 0 auto;
+}
+footer .footer1 {
+    overflow: hidden;
+}
+footer .footer1 .msg{
+    margin-top: 37px;
+    margin-left: 8px;
+    float: left;
+}
+footer .footer1 .msg a{
+    color:#fff;
+    padding-left: 22px;
+    padding-right: 18px;
+    border-right: 1px solid #b3a59c;
+}
+footer .footer1 .msg a:last-child{
+    border: 0;
+}
+footer .footer1 .contact{
+    margin-top: 37px;
+    margin-left: 75px;
+    float: left;
+}
+footer .footer1 .contact img{
+    height: 12px;
+    width: 12px;
+    float: left;
+    /* delete  default gap first, then set accurate margin*/
+    margin-right: 3px;
+}
+footer .footer1 .contact a{
+    margin-right: 45px;
+    color: #fff;
+}
+footer .footer2{
+    text-align: center;
+    color: #fff;
+    margin-top: 34px;
+}
+footer .footer2 .copyright span{
+    margin-right: 40px;
+}
